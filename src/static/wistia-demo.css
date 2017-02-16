@@ -1,0 +1,82 @@
+/* global */
+
+body {
+  align-items: center;
+  background-image: linear-gradient(to bottom, #252525, #303030);
+  display: flex;
+  font-family: sans-serif;
+  height: 100%;
+  justify-content: center;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+/* wd-player */
+
+.wd-nub {
+  background-color: rgba(255, 255, 255, 1);
+  display: inline-block;
+  height: 100%;
+  margin-left: -2px;
+  width: 2px;
+}
+
+.wd-player {
+  cursor: pointer;
+  position: relative;
+}
+
+.wd-player:hover .wd-scrub,
+.wd-scrub:focus {
+  font-size: 0.9em;
+  height: 20px;
+  line-height: 0.3;
+  outline: none;
+}
+
+.wd-scrub {
+  align-items: center;
+  background-color: rgba(200, 200, 200, 0.4);
+  bottom: 0;
+  display: flex;
+  font-size: 0.6em;
+  height: 10px;
+  line-height: 0;
+  overflow: hidden;
+  position: absolute;
+  transition: all linear 80ms;
+  user-select: none;
+  width: 100%;
+}
+
+.wd-scrub.dragging {
+  cursor: ew-resize;
+}
+
+.wd-scrub-progress {
+  background-color: rgba(90, 70, 190, 1);
+  box-sizing: border-box;
+  height: 75%;
+}
+
+.wd-time {
+  color: white;
+  padding: 0 5px;
+  position: absolute;
+}
+
+.wd-tracking-readout {
+  color: gray;
+  font-size: 0.8em;
+  left: 0;
+  position: absolute;
+  top: -20px;
+}
+
+.wd-video {
+  display: block;
+  width: 100%;
+}
