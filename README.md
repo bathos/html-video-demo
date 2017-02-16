@@ -1,4 +1,4 @@
-# Wistia FE Demo
+# FE HTML Video Demo
 
 ```
 npm install
